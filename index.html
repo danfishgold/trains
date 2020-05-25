@@ -1,337 +1,315 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-	<link rel="apple-touch-icon-precomposed" href="favicon-152.png">
-	
-	<title>רכבות - אפליקציה לאייפון</title>
-
-	<style type="text/css">
-
-	@font-face {
-	    font-family: Gutman;
-	    src: url(GYADBR.TTF);
-	}
-
-	.eastered {
-		font-family: Gutman;
-	}
-
-	body {
-		direction: rtl;
-		font-family: Arial;
-
-		background: #2560D5;
-		background: -moz-linear-gradient(top, #3F8FFF 0%, #2560D5 100%);
-		background: -webkit-linear-gradient(top, #3F8FFF 0%,#2560D5 100%);
-		background: linear-gradient(to bottom, #3F8FFF 0%,#2560D5 100%);
-		/*background-color: #2560D5;*/
-		/*background-color: #3F8FFF;*/
-		color: #FFFFFF;
-	}
-
-	a,
-	a:hover,
-	a:visited,
-	a:active {
-		color: #FFFFFF;
-	}
-
-
-	#main-container {
-		display: flex;
-		display: flexbox;
-		display: box;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		align-content: center;
-	}
-
-	#iphone-image {
-		flex: 0 2 auto;
-		heigh: auto;
-	}
-
-
-	#main-text {
-		flex: 0 1 auto;
-		padding: 0 15px;
-		text-align: center;
-	}
-
-	@media (max-width: 800px) {
-
-		#main-container {
-			margin: 5vh auto;
-		}
-
-		#iphone-image {
-			margin-bottom: -20px;
-		}
-
-		#main-text h1 {
-			font-size: 64px;
-			margin-bottom: -20px;
-		}
-
-		#main-text p {
-			font-size: 24px;
-		}
-
-		#iphone-image {
-			max-width: 60vw;
-			max-height: 60vh;
-		}
-	}
-
-	@media (min-width: 800px) and (max-width: 1600px) {
-
-		#main-container {
-			margin: 15vh auto;
-		}
-
-		#main-text h1 {
-			font-size: 8vw;
-			margin-bottom: -10px;
-		}
-
-		#main-text p {
-			font-size: 3vw;
-		}
-
-		#iphone-image {
-			max-width: 30vw;
-			max-height: 70vh;
-		}
-	}
-
-	@media (min-width: 1600px) {
-
-		#main-container {
-			margin: 15vh auto;
-		}
-
-		#main-text h1 {
-			font-size: 128px;
-			margin-bottom: -10px;
-		}
-
-		#main-text p {
-			font-size: 48px;
-		}
-
-		#iphone-image {
-			max-width: 30vw;
-			max-height: 70vh;
-		}
-	}
-
-	
-
-	.app-store-badge {
-		width: 80%;
-		max-width: 150px;
-		margin: 0 auto;
-	}
-
-	#qna {
-		max-width: 700px;
-		margin: 0 auto;
-		padding-left: 5vw;
-		padding-right: 5vw;
-		padding-bottom: 5vw;
-	}
-
-	#qna h3 {
-		margin-bottom: -10px;
-	}
-
-	#qna p {
-		line-height: 1.4em;
-	}
-
-	.easter-link {
-		text-decoration: none;
-		cursor: default;
-		color: #FFFFFF;
-	}
-
-	</style>
-
-</head>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "SoftwareApplication",
-  "name" : "רכבות",
-  "url" : "http://trainsapp.com/",
-  "applicationCategory" : "Utilities",
-  "downloadUrl" : "https://itunes.apple.com/il/app/rkbwt/id1028913069?ls=1&mt=8",
-  "operatingSystem" : "iOS",
-  "requirements" : "iOS 9",
-  "screenshot" : "http://www.trainsapp.com/website_iphone_image.png",
-  "softwareVersion" : "1.0"
-}
-</script>
-
-<body>
-
-<div itemscope itemtype="http://schema.org/SoftwareApplication" id="main-container">
-	<img itemprop="screenshot" id="iphone-image" src="website_iphone_image.png">
-	<div id="main-text">
-		<h1 itemprop="name">רכבות</h1>
-		<p>אפליקציה קטנה ומהירה לרכבת</p>
-		<div class="app-store-badge"><a itemprop="downloadUrl" href="https://itunes.apple.com/il/app/rkbwt/id1028913069?ls=1&mt=8"><img src="app_store_badge.svg"></a></div>
-	</div>
-
-<meta itemprop="requirements" content="iOS 9">
-<meta itemprop="operatingSystem" content="iOS">
-<meta itemprop="softwareVersion" content="1.0">
-<meta itemprop="applicationCategory" content="Utilities">
-<meta itemprop="url" content="http://trainsapp.com/">
-
-</div>
-
-<div id="qna">
-	
-	<h2>שאלות ותשובות</h2>
-
-	<div>
-		<h3>מה האפליקציה עושה?</h3>
-		<p>מראה את לוח הזמנים לרכבות בין תחנות. היא גם יכולה לזהות את התחנה הכי קרובה אליך ואז להשתמש בה אוטומטית כתחנת המקור.</p>
-	</div>
-	
-	<div>
-		<h3>במה האפליקציה הזו טובה יותר מהרשמית?</h3>
-		<p>היא מהירה יותר, היא יפה יותר (מבחינתי), היא נוחה יותר (עבורי) ויש בה אפשרות שאני ממש אוהב: במסך הבית של האייפון אפשר לגרור למטה ואז מופיעה תיבת חיפוש (היא מופיעה גם משמאל למסך הבית הראשון). אפשר לחפש שם אנשי קשר, שירים ועוד כל מיני דברים. אם האפליקציה הזו מותקנת אפשר לחפש שם תחנת רכבת כלשהי ואז ממש בקלות לראות את הרכבות הבאות מהתחנה הקרובה ביותר לתחנה הזאת. זה <i>ממש </i> מהיר.</p>
-	</div>
-
-	<div>
-		<h3>ואם האפליקציה לא מתאימה לי?</h3>
-		<p>זה בסדר, תמיד יש את האפליקציה הרשמית<span id="easter-link">.</span></p>
-	</div>
-
-	<div>
-		<h3>אני יכול לשלוח לך באגים שאני מוצא או פיצ׳רים שאני רוצה או דברים בסגנון?</h3>
-		<p>בטח. יש את <a href="https://www.facebook.com/trainsapp">עמוד הפייסבוק</a>, שמשום מה לינק אליו באייפון לא יפתח את האפליקציה (במקום זה אפשר לחפש ״רכבות״ בפייסבוק), ויש את האימייל <a href="mailto:support@trainsapp.com">support@trainsapp.com</a>. הבחירה בידייך. אם הבחירה היתה בעמוד הפייסבוק אז לייק יהיה ממש נחמד :)</p>
-	</div>
-
-	<div>
-		<h3>אני רוצה לכתוב על האפליקציה באינטרנט. זה בסדר?</h3>
-		<p>ברור, ואפילו יותר טוב אם תשלח/י לי מייל עם לינק.</p>
-	</div>
-
-	<div id="easter" hidden=true>
-
-	<div>
-		<h3>למה השם רכבות?</h3>
-		<p>כי זה קשור לרכבת והשם ״רכבת״ היה תפוס.</p>
-	</div>
-	
-	<div>
-		<h3>מה הסדרה האהובה עליך נכון לעכשיו?</h3>
-		<p>כנראה שסטיבן יוניברס.</p>
-	</div>
-	
-	<div>
-		<h3>מה זה?</h3>
-		<p>זו סדרה מצויירת על חייזרים אבל זה תיאור מטומטם וזו לא סדרה מטומטמת.</p>
-	</div>
-	
-	<div>
-		<h3>ערגליות תות או שוקולד?</h3>
-		<p>תות.</p>
-	</div>
-	
-	<div>
-		<h3>איכס</h3>
-		<p>כל אחד והטעם שלו.</p>
-	</div>
-	
-	<div>
-		<h3>למה כתבת את ה״שאלה״ הקודמת אם זו לא באמת היתה שאלה?</h3>
-		<p>אני חושב שזה די ברור שבשלב הזה אני כבר לא עונה על שאלות אלא מדבר עם עצמי.</p>
-	</div>
-	
-	<div>
-		<h3>אוקיי, אבל למה?</h3>
-		<p>משעמם לי.</p>
-	</div>
-	
-	<div>
-		<h3>וואו זה הכי תירוץ אי פעם</h3>
-		<p>נכון. אני גם עושה את זה כי יש סיכוי שמישהו יחשוב שזה נחמד ויראה את זה לעוד אנשים. זה גם עוזר למלא את העמוד וזה קל יותר מלנסות לסדר את התמונה של האייפון למעלה ואת הטקסט שמופיע לידו ביחד.</p>
-	</div>
-	
-	<div>
-		<h3>על מה אתה מדבר? זה נראה לי בסדר</h3>
-		<p>כן, כי בעתיד הקרוב אני אסדר את זה.</p>
-	</div>
-	
-	<div>
-		<h3>אה, אז יצא מאוד נחמד</h3>
-		<p>תודה.</p>
-	</div>
-
-	<div>
-		<h3>איך אני משיג את האפליקציה הזו בכלל?</h3>
-		<p>ככה:</p>
-	</div>
-
-	</div>
-
-	<div class="app-store-badge"><a href="https://itunes.apple.com/il/app/rkbwt/id1028913069?ls=1&mt=8"><img src="app_store_badge.svg"></a></div>
-
-</div>
-
-
-<script type="text/javascript">
-
-function arraysEqual(a, b) {
-  if (a === b) return true;
-  if (a == null || b == null) return false;
-  if (a.length != b.length) return false;
-
-  // If you don't care about the order of the elements inside
-  // the array, you should sort both arrays here.
-
-  for (var i = 0; i < a.length; ++i) {
-    if (a[i] !== b[i]) return false;
-  }
-  return true;
-}
-	
-var previousKeys = [];
-
-document.querySelector('body').onkeyup = function(e) {
-	previousKeys.push(e.keyCode);
-	if (previousKeys.length > 11) {
-		previousKeys = previousKeys.slice(previousKeys.length-11, previousKeys.length);
-	}
-
-	console.log(previousKeys);
-
-	if (arraysEqual(previousKeys, [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13])) {
-		konamiEaster();
-	}
-};
-
-function konamiEaster() {
-	document.querySelector('body').className += " eastered";
-}
-
-
-document.getElementById('easter-link').onclick = function() {
-	document.getElementById('easter').hidden = false;
-};
-
-</script>
-
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="apple-touch-icon-precomposed" href="favicon-152.png" />
+
+    <title>רכבות - אפליקציה לאייפון</title>
+
+    <style type="text/css">
+      @font-face {
+        font-family: Gutman;
+        src: url(GYADBR.TTF);
+      }
+
+      .eastered {
+        font-family: Gutman;
+      }
+
+      body {
+        direction: rtl;
+        font-family: Arial;
+
+        background: #2560d5;
+        background: linear-gradient(to bottom, #3f8fff 0%, #2560d5 100%);
+        color: #ffffff;
+      }
+
+      a,
+      a:hover,
+      a:visited,
+      a:active {
+        color: #ffffff;
+      }
+
+      #main-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+
+      #iphone-image {
+        flex: 0 2 auto;
+      }
+
+      #main-text {
+        flex: 0 1 auto;
+        padding: 0 15px;
+        text-align: center;
+      }
+
+      @media (max-width: 800px) {
+        #main-container {
+          margin: 5vh auto;
+        }
+
+        #iphone-image {
+          margin-bottom: -20px;
+        }
+
+        #main-text h1 {
+          font-size: 64px;
+          margin-bottom: -20px;
+        }
+
+        #main-text p {
+          font-size: 24px;
+        }
+
+        #iphone-image {
+          max-width: 60vw;
+          max-height: 60vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 1600px) {
+        #main-container {
+          margin: 15vh auto;
+        }
+
+        #main-text h1 {
+          font-size: 8vw;
+          margin-bottom: -10px;
+        }
+
+        #main-text p {
+          font-size: 3vw;
+        }
+
+        #iphone-image {
+          max-width: 30vw;
+          max-height: 70vh;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        #main-container {
+          margin: 15vh auto;
+        }
+
+        #main-text h1 {
+          font-size: 128px;
+          margin-bottom: -10px;
+        }
+
+        #main-text p {
+          font-size: 48px;
+        }
+
+        #iphone-image {
+          max-width: 30vw;
+          max-height: 70vh;
+        }
+      }
+
+      .app-store-badge {
+        width: 80%;
+        max-width: 150px;
+        margin: 0 auto;
+      }
+
+      #qna {
+        max-width: 700px;
+        margin: 0 auto;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vw;
+      }
+
+      #qna h3 {
+        margin-bottom: -10px;
+      }
+
+      #qna p {
+        line-height: 1.4em;
+      }
+
+      .easter-link {
+        text-decoration: none;
+        cursor: default;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <img id="iphone-image" src="website_iphone_image.png" />
+      <div id="main-text">
+        <h1>רכבות</h1>
+        <p>אפליקציה קטנה ומהירה לרכבת</p>
+        <div class="app-store-badge">
+          <a href="#"><img src="app_store_badge.svg" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="qna">
+      <h2>שאלות ותשובות</h2>
+
+      <div>
+        <h3>מה האפליקציה עושה?</h3>
+        <p>
+          מראה את לוח הזמנים לרכבות בין תחנות. היא גם יכולה לזהות את התחנה הכי
+          קרובה אליך ואז להשתמש בה אוטומטית כתחנת המקור.
+        </p>
+      </div>
+
+      <div>
+        <h3>במה האפליקציה הזו טובה יותר מהרשמית?</h3>
+        <p>
+          היא מהירה יותר, היא יפה יותר (מבחינתי), היא נוחה יותר (עבורי) ויש בה
+          אפשרות שאני ממש אוהב: במסך הבית של האייפון אפשר לגרור למטה ואז מופיעה
+          תיבת חיפוש (היא מופיעה גם משמאל למסך הבית הראשון). אפשר לחפש שם אנשי
+          קשר, שירים ועוד כל מיני דברים. אם האפליקציה הזו מותקנת אפשר לחפש שם
+          תחנת רכבת כלשהי ואז ממש בקלות לראות את הרכבות הבאות מהתחנה הקרובה
+          ביותר לתחנה הזאת. זה <i>ממש </i> מהיר.
+        </p>
+      </div>
+
+      <div>
+        <h3>ואם האפליקציה לא מתאימה לי?</h3>
+        <p>
+          זה בסדר, תמיד יש את האפליקציה הרשמית<span id="easter-link">.</span>
+        </p>
+      </div>
+
+      <div>
+        <h3>
+          אני יכול לשלוח לך באגים שאני מוצא או פיצ׳רים שאני רוצה או דברים
+          בסגנון?
+        </h3>
+        <p>
+          בטח. יש את
+          <a href="https://www.facebook.com/trainsapp">עמוד הפייסבוק</a>, שמשום
+          מה לינק אליו באייפון לא יפתח את האפליקציה (במקום זה אפשר לחפש ״רכבות״
+          בפייסבוק), ויש את האימייל <a href="#">support@trainsapp.com</a>.
+          הבחירה בידייך. אם הבחירה היתה בעמוד הפייסבוק אז לייק יהיה ממש נחמד :)
+        </p>
+      </div>
+
+      <div>
+        <h3>אני רוצה לכתוב על האפליקציה באינטרנט. זה בסדר?</h3>
+        <p>ברור, ואפילו יותר טוב אם תשלח/י לי מייל עם לינק.</p>
+      </div>
+
+      <div id="easter" hidden>
+        <div>
+          <h3>למה השם רכבות?</h3>
+          <p>כי זה קשור לרכבת והשם ״רכבת״ היה תפוס.</p>
+        </div>
+
+        <div>
+          <h3>מה הסדרה האהובה עליך נכון לעכשיו?</h3>
+          <p>כנראה שסטיבן יוניברס.</p>
+        </div>
+
+        <div>
+          <h3>מה זה?</h3>
+          <p>
+            זו סדרה מצויירת על חייזרים אבל זה תיאור מטומטם וזו לא סדרה מטומטמת.
+          </p>
+        </div>
+
+        <div>
+          <h3>ערגליות תות או שוקולד?</h3>
+          <p>תות.</p>
+        </div>
+
+        <div>
+          <h3>איכס</h3>
+          <p>כל אחד והטעם שלו.</p>
+        </div>
+
+        <div>
+          <h3>למה כתבת את ה״שאלה״ הקודמת אם זו לא באמת היתה שאלה?</h3>
+          <p>
+            אני חושב שזה די ברור שבשלב הזה אני כבר לא עונה על שאלות אלא מדבר עם
+            עצמי.
+          </p>
+        </div>
+
+        <div>
+          <h3>אוקיי, אבל למה?</h3>
+          <p>משעמם לי.</p>
+        </div>
+
+        <div>
+          <h3>וואו זה הכי תירוץ אי פעם</h3>
+          <p>
+            נכון. אני גם עושה את זה כי יש סיכוי שמישהו יחשוב שזה נחמד ויראה את
+            זה לעוד אנשים. זה גם עוזר למלא את העמוד וזה קל יותר מלנסות לסדר את
+            התמונה של האייפון למעלה ואת הטקסט שמופיע לידו ביחד.
+          </p>
+        </div>
+
+        <div>
+          <h3>על מה אתה מדבר? זה נראה לי בסדר</h3>
+          <p>כן, כי בעתיד הקרוב אני אסדר את זה.</p>
+        </div>
+
+        <div>
+          <h3>אה, אז יצא מאוד נחמד</h3>
+          <p>תודה.</p>
+        </div>
+
+        <div>
+          <h3>איך אני משיג את האפליקציה הזו בכלל?</h3>
+          <p>ככה:</p>
+        </div>
+      </div>
+
+      <div class="app-store-badge">
+        <a href="#"><img src="app_store_badge.svg" /></a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function arraysEqual(a, b) {
+        if (a === b) return true
+        if (a == null || b == null) return false
+        if (a.length != b.length) return false
+
+        for (let i = 0; i < a.length; ++i) {
+          if (a[i] !== b[i]) return false
+        }
+        return true
+      }
+      const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
+      let previousKeys = []
+
+      document.querySelector('body').onkeyup = function (e) {
+        previousKeys.push(e.keyCode)
+        if (previousKeys.length > 11) {
+          previousKeys = previousKeys.slice(-11)
+        }
+
+        if (arraysEqual(previousKeys, konami)) {
+          konamiEaster()
+        }
+      }
+
+      function konamiEaster() {
+        document.querySelector('body').className += ' eastered'
+      }
+
+      document.getElementById('easter-link').onclick = function () {
+        document.getElementById('easter').hidden = false
+      }
+    </script>
+  </body>
 </html>
